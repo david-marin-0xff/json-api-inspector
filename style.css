@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: #0f172a;
-    color: #e2e8f0;
+    background: #111111;
+    color: #e5e5e5;
     font-family: Consolas, monospace;
 }
 
@@ -14,19 +14,28 @@ body {
 
 h1 {
     text-align: center;
-    color: #38bdf8;
+    color: #f97316;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(249, 115, 22, 0.4);
 }
 
 textarea {
     width: 100%;
     height: 250px;
-    background: #1e293b;
+    background: #1a1a1a;
     color: #f8fafc;
-    border: 1px solid #334155;
+    border: 1px solid #333333;
     padding: 15px;
     font-size: 14px;
-    border-radius: 8px;
+    border-radius: 10px;
     resize: vertical;
+    transition: 0.2s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #f97316;
+    box-shadow: 0 0 10px rgba(249, 115, 22, 0.35);
 }
 
 .buttons {
@@ -37,41 +46,54 @@ textarea {
 }
 
 button {
-    background: #38bdf8;
+    background: linear-gradient(135deg, #f97316, #ea580c);
     border: none;
-    color: black;
+    color: white;
     padding: 10px 16px;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
+    transition: 0.2s ease;
+    box-shadow: 0 4px 10px rgba(249, 115, 22, 0.25);
 }
 
 button:hover {
-    opacity: 0.9;
+    transform: translateY(-2px);
+    opacity: 0.95;
 }
 
 #searchBox {
     margin-top: 20px;
     width: 100%;
     padding: 12px;
-    background: #1e293b;
+    background: #1a1a1a;
     color: white;
-    border: 1px solid #334155;
-    border-radius: 6px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+#searchBox:focus {
+    outline: none;
+    border-color: #f97316;
+    box-shadow: 0 0 10px rgba(249, 115, 22, 0.35);
 }
 
 #status {
     margin-top: 15px;
     font-weight: bold;
+    font-size: 15px;
 }
 
 pre {
     margin-top: 20px;
-    background: #111827;
+    background: #181818;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow-x: auto;
     white-space: pre-wrap;
     word-wrap: break-word;
-    border: 1px solid #334155;
+    border: 1px solid #333333;
+    line-height: 1.5;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
 }
