@@ -2,14 +2,16 @@
 
 A lightweight developer tool for inspecting and validating JSON API responses.
 
+<img width="1607" height="827" alt="image" src="https://github.com/user-attachments/assets/88a6ae7d-28c7-48b2-88a6-ff315a38bd71" />
+
+
 ## Features
 
 - JSON formatting
 - Validation
 - Search/filtering
-- Pretty printing
 - Copy to clipboard
-- Dark mode UI
+
 
 ## Technologies
 
@@ -19,6 +21,7 @@ A lightweight developer tool for inspecting and validating JSON API responses.
 
 ## Future Improvements
 
+- Dark/light mode UI
 - Tree view rendering
 - JSON schema validation
 - API fetching
